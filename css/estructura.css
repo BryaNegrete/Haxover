@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background:#011126;
+}
+
+/*cabecera de la pagina*/
+.logotipo{ 
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 3px;
+    float: left;
+    
+}
+header{
+    width: 100%;
+    height: 50px;
+    background:rgba(33,40,50,0.4);; 
+    
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+#menu-bar{
+    display: none;  
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    color:rgba(0,173,180,0.5);
+    cursor: pointer;
+}
+.menu{
+    position: static;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(33,40,50,0.1);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: #EEEFE9;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(238,238,238);
+}
+.menu a:hover{
+    background:rgba(238,238,238,0.3);
+}
+.menu ul li:hover ul{
+    display: block;
+    position: static;
+    background: rgba(0,0,0,0.7)
+}
+.menu ul ul{
+        display: none;
+    }
+.menu a span{
+    right:-5px;
+    font-size: 15px;
+}
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+@media(min-width: 1024px){ /* esto es para hacer responsive la pagina*/
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0);
+        float: right;
+        display: flex;
+        background:rgba(33,40,50,0.0);
+    }
+    header label{
+        display: none;
+        
+    }
+    .menu a{
+        display: block;
+        border: none;
+        font-size: 25px;
+        padding: 15px;
+        
+        
+        
+    }
+    .menu ul{
+    display: flex;
+    list-style: none;
+}
+    .menu ul ul{
+        display: none;
+    }
+    .menu a span{
+        margin-left: 10px;
+    }
+    
+    .menu ul li:hover ul{
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,0.7)
+}
+}
+
+
+.copy{ 
+    font-size: 23px;
+    color:#EEEEED;
+}
+
+footer .footer{ /* pie de pagina*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: #202932;
+    bottom: 0;
+    
+} /* pie de pagina*/
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+    
+}
+.sociales a{
+    color:#EEEEED;
+}

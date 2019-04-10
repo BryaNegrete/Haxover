@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background:#333333;
+}
+
+/*header de la pagina*/
+.logotipo{ 
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 3px;
+    float: left;
+    filter:opacity(100%);
+    
+}
+header{
+    width: 100%;
+    height: 50px;
+    background:rgba(33,40,50,0.4);; 
+    
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+#menu-bar{
+    display: none;  
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    color:rgba(0,173,180,0.5);
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(33,40,50,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: #EEEFE9;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(238,238,238,0.5)
+}
+.menu a:hover{
+    background:rgba(238,238,238,0.3);
+}
+.menu ul li:hover ul{
+    display: block;
+    position: static;
+    background: rgba(0,0,0,0.7)
+}
+.menu ul ul{
+        display: none;
+    }
+.menu a span{
+    right:-5px;
+    font-size: 15px;
+}
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+@media(min-width: 1024px){ /* esto es para hacer responsive la pagina*/
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0);
+        float: right;
+        display: flex;
+        background:rgba(33,40,50,0.0);
+    }
+    header label{
+        display: none;
+        
+    }
+    .item h1{
+        font-size:50px;
+    }
+    .menu a{
+        display: block;
+        border: none;
+        font-size: 25px;
+        padding: 15px;
+        
+        
+        
+    }
+    .menu ul{
+    display: flex;
+    list-style: none;
+}
+    .menu ul ul{
+        display: none;
+    }
+    .menu a span{
+        margin-left: 10px;
+    }
+    
+    .menu ul li:hover ul{
+    display: block;
+    position: static;
+    background: rgba(0,0,0,0.7)
+}
+    #bienvenidos h1{
+        font-size: 70px;
+    }
+    
+}
+
+
+
+
+
+/*contenido de la pagina*/
+#bienvenidos{
+    text-align: center;
+    color:#fff;
+}
+.pesp{
+    font-weight: bold;
+}
+
+.contenidos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background:#EEEEED;
+} 
+.contenidos article{
+    margin: 15px;
+}
+.contenidos img{
+    width:100%;
+    max-width:300px;
+    height: 200px;
+}
+.contenidos h4{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.porque{
+    text-align: center;
+    color: #EEEEED;
+}
+
+.copy{
+    font-size: 23px;
+    color:#EEEEED;
+}
+
+footer .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: #202932;
+    
+} /* pie de pagina*/
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+    
+}
+.sociales a{
+    color:#EEEEED;
+}
+
+.contenidos a{
+    color:black;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+
+/* esto es el css del slider de imagenes */
+.item{
+    width: 100%;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    margin: auto;
+}
+#carousel-1{
+    width: 80%;
+    margin: auto;
+    
+}
+.botler{
+    color: aliceblue;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+@media (max-width:600px){
+    .item{
+        height: 280px;
+    }
+}

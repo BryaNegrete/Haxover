@@ -1,0 +1,62 @@
+.fondport{
+    background:#333333;
+    width:100%;
+   display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portada{
+    height: 80%;
+    width: 60%;
+    margin: auto;}
+
+form{
+    width: 100%;
+    margin: auto;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 9px;
+    margin-bottom: 50px;
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;  
+}
+
+#btn_enviar{
+    background:#31348a;
+    color: #fff;
+    padding: 20px;
+    
+}
+#btn_enviar:hover{
+    cursor: pointer;
+}
+
+@media(max-width:480px){
+    form{
+        width: 100%;
+    }
+}

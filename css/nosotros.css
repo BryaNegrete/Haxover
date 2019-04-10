@@ -1,0 +1,35 @@
+.fondport{
+    background:#333333;
+    width:100%;
+   display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portada{
+    height: 80%;
+    width: 60%;
+    margin: auto;
+}
+h3{
+    font-size: 40px;
+}
+h1{
+    margin-top: 70px;
+}
+.colum{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.redes{
+    width: 100%;
+    text-align:left;
+    font-size:40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.icon-gmail{
+    color:brown;
+    margin-left: 20px;
+}
